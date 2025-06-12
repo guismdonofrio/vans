@@ -1,0 +1,251 @@
+/* Reset e fonte padrão */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* HERO / seção história */
+.hero-historia {
+  background-color: #000;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Linha do tempo da história */
+
+.linha-do-tempo h5 {
+  margin-top: 2rem;
+  color: #000000;
+}
+.linha-do-tempo p {
+  font-size: 1rem;
+}
+.linha-do-tempo::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #000000;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin-left: -2px;
+}
+.linha-do-tempo h5::before {
+  content: "●";
+  color: #000000;
+  margin-right: 8px;
+}
+
+/* Cards de produto */
+.produto-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+}
+
+.produto-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+.produto-card h5 {
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.produto-card p {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Cultura e estilo */
+.cultura-section {
+  padding: 60px 20px;
+}
+
+.cultura-img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Links no footer para redes sociais */
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #f0a500;
+}
+
+/* Espaçamento geral */
+section {
+  margin-bottom: 60px;
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+  .linha-do-tempo {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .produto-card img, .cultura-img, .img-galeria {
+    height: 180px;
+  }
+}
+
+
+/*formulario*/
+/* Estilos gerais */
+.vans-body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f9fa"/><path d="M20,20 L80,80 M80,20 L20,80" stroke="%23e9ecef" stroke-width="1.5"/></svg>');
+}
+
+.vans-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.vans-header {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Formulário */
+.vans-form {
+  background-color: #fff;
+}
+
+.vans-input {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px 15px;
+  transition: all 0.3s;
+}
+
+.vans-input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* Botão */
+.vans-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  border: 2px solid #000;
+}
+
+
+/* Rodapé */
+.vans-footer {
+  background-color: #000000;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .vans-logo {
+      font-size: 2.5rem;
+  }
+  
+  .vans-form {
+      padding: 1.5rem !important;
+  }
+}
+
+
+/**/
+/* Exemplo de paleta de cores */
+:root {
+  --cor-principal: #1a1a1a; /* Cor principal */
+  --cor-secundaria: #000000; /* Cor de destaque */
+  --cor-fundo: #000000; /* Cor de fundo */
+  --cor-texto: #333; /* Cor do texto */
+}
+
+/* Aplicando as cores */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: var(--cor-secundaria);
+  color: #fff;
+}
+
+
+
+
+
+
+
+/*video*/
+/* HERO COM VÍDEO ESTILO BANNER */
+.hero-video {
+  position: relative;
+  height: 100vh; /* altura tipo banner */
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.hero-video .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-video .overlay-content {
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro semitransparente */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
